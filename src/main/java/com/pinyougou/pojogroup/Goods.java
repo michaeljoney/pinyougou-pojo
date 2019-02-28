@@ -20,6 +20,14 @@ public class Goods implements Serializable {
         this.goods = goods;
     }
 
+    public TbGoods getTBGoods() {
+        return goods;
+    }
+
+    public void setTBGoods(TbGoods goods) {
+        this.goods = goods;
+    }
+
     public TbGoodsDesc getGoodsDesc() {
         return goodsDesc;
     }
@@ -35,4 +43,14 @@ public class Goods implements Serializable {
     public void setItemList(List<TbItem> itemList) {
         this.itemList = itemList;
     }
+
+    @Override
+    public String toString() {
+        return "Goods{" +
+                "goods=" + goods +
+                ", goodsDesc=" + goodsDesc +
+                ", itemList=" + itemList +
+                '}';
+    }
+
 }
